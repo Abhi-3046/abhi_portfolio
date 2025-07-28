@@ -148,5 +148,18 @@
   </footer>
 
   <script src="portfolio_js.js"></script>
+	<!-- Lenis Smooth Scroll Script -->
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis()
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
+
 </body>
 </html>
